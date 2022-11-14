@@ -14,6 +14,7 @@
   "author": "subhro",
   "license": "ISC",
   "devDependencies": {
+    "@types/socket.io": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "eslint": "^8.27.0",
@@ -29,5 +30,8 @@
   "types": "./lib/index.d.ts",
   "files": [
     "lib/"
-  ]
+  ],
+  "dependencies": {
+    "socket.io": "^4.5.3"
+  }
 }
