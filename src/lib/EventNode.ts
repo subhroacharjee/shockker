@@ -18,4 +18,8 @@ export class EventNode {
 			yield this.handlers[i];
 		}
 	}
+
+	public getEvent = () => {
+		return this.event;
+	};
 }
