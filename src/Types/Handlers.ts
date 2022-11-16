@@ -1,3 +1,3 @@
-import { Callback, ErrorCallBack, MiddlewareCallback } from './Callback';
+import { Callback, MiddlewareCallback } from './Callback';
 
-export type Handler = Callback | ErrorCallBack | MiddlewareCallback
+export type Handler = Callback | MiddlewareCallback
