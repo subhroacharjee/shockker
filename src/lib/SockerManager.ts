@@ -4,6 +4,7 @@ import {
 } from 'socket.io';
 
 import {
+	createServer,
 	Server
 } from 'http';
 import { Router } from '@LIB/Router';
@@ -12,7 +13,7 @@ import { Handler } from '@Types/Handlers';
 import { SocketMiddleware } from '@Types/Middlewares';
 
 export class SockerManager {
-	private httpServer!: Server;
+	private httpServer: Server | null = null;
 	private socketServer!: SocketServer;
 	private events: EventNode[] = [];
 	private middlewares: SocketMiddleware[] = [];
@@ -47,6 +48,19 @@ export class SockerManager {
 	};
 
 	public run = () => {
+		if (!this.httpServer) throw new Error('No server is attached!');
+		this._run();
+	};
+
+	public runWithoutServer = (port: string) => {
+		this.httpServer = createServer((req, res) => {
+			res.end();
+		});
+		this.httpServer.listen(port);
+		this._run();
+	};
+
+	private _run = () => { 
 		for(const idx in this.middlewares) {
 			const midware = this.middlewares[idx];
 			this.socketServer.use(midware);
