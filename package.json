@@ -12,7 +12,7 @@
     "framework"
   ],
   "author": "subhroacharjee",
-  "repository": "https://github.com/subhroacharjee/socker",
+  "repository": "https://github.com/subhroacharjee/shockker",
   "license": "ISC",
   "devDependencies": {
     "@types/socket.io": "^3.0.2",
