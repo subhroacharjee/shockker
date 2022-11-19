@@ -1,5 +1,5 @@
 {
-  "name": "socker",
+  "name": "shockker",
   "version": "1.0.0",
   "description": "A wrapper over socket io",
   "scripts": {
@@ -11,7 +11,8 @@
     "socket.io",
     "framework"
   ],
-  "author": "subhro",
+  "author": "subhroacharjee",
+  "repository": "https://github.com/subhroacharjee/socker",
   "license": "ISC",
   "devDependencies": {
     "@types/socket.io": "^3.0.2",
