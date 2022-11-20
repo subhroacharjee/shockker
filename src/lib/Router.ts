@@ -1,4 +1,4 @@
-import { Handler } from '@Types/Handlers';
+import { Handler } from '@type/Handlers';
 import { EventNode } from './EventNode';
 
 export class Router {

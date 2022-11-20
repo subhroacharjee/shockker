@@ -1,4 +1,4 @@
-import { Handler } from '@Types/Handlers';
+import { Handler } from '@type/Handlers';
 
 export class EventNode {
 	private event: string;

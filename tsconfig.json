@@ -15,10 +15,10 @@
         "*": [
             "node_modules/*"
         ],
-        "@Types/*": [
+        "@type/*": [
           "src/Types/*"
         ],
-        "@LIB/*": [
+        "@lib/*": [
           "src/lib/*"
         ],
     }

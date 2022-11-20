@@ -7,10 +7,10 @@ import {
 	createServer,
 	Server
 } from 'http';
-import { Router } from '@LIB/Router';
-import { EventNode } from '@LIB/EventNode';
-import { Handler } from '@Types/Handlers';
-import { SocketMiddleware } from '@Types/Middlewares';
+import { Router } from '@lib/Router';
+import { EventNode } from '@lib/EventNode';
+import { Handler } from '@type/Handlers';
+import { SocketMiddleware } from '@type/Middlewares';
 
 export class SockerManager {
 	private httpServer: Server | null = null;
