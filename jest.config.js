@@ -5,5 +5,5 @@ module.exports = {
 	testEnvironment: 'node',
 	clearMocks: true,
 	bail: true,
-	forceExit: true,
+	forceExit: true
 };

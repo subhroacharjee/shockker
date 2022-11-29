@@ -3,31 +3,23 @@ module.exports = {
 		browser: true,
 		es2021: true
 	},
-	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended'
-	],
+	extends: 'standard-with-typescript',
 	overrides: [
 	],
 	parserOptions: {
 		ecmaVersion: 'latest',
-		sourceType: 'module'
+		sourceType: 'module',
+		project: './tsconfig.json'
 	},
-	plugins: [
-		'@typescript-eslint'
-	],
 	rules: {
-		'indent': [
-			'error',
-			'tab'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
+		'no-tabs': 0,
+		indent: 'off',
+		'@typescript-eslint/indent': 'off',
+		'@typescript-eslint/explicit-function-return-type': 'off',
+		semi: [
 			'error',
 			'always'
 		],
+		'@typescript-eslint/consistent-type-assertions': 'off'
 	}
 };
