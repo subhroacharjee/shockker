@@ -16,7 +16,10 @@ module.exports = {
 		indent: 'off',
 		'@typescript-eslint/indent': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
-		'@typescript-eslint/semi': 'off',
+		semi: [
+			'error',
+			'always'
+		],
 		'@typescript-eslint/consistent-type-assertions': 'off'
 	}
-}
+};

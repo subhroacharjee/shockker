@@ -51,8 +51,3 @@ export class EventNode {
 		}
 	}
 }
-
-	public getEvent = () => {
-		return this.event;
-	};
-}
